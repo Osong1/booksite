@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookIn | Contact Support</title>
+    <link href="../output.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="relative body-font">
+    <a href="""><img src="/src/assets/images/chat.png"  class="fixed bottom-16 right-20 w-20 lg:w-24 z-50 hover:drop-shadow-xl" alt=""></a>
+    <!-- Navbar Section start -->
+    <nav class=" bg-[#172bc7] sticky top-0 z-50 p-2 md:px-5 lg:px-20">
+        <div class=" p-3 flex flex-wrap items-center justify-between container">
+            <a href="/src/index.html" aria-label="Go to homepage"> <img src="../assets/images/dlogo.png" alt="logo"
+                    class="w-24 md:w-28 hover:opacity-90 ml-5"> </a>
+            <div class="hidden md:flex items-center  space-x-6 text-white font-medium">
+                <a href="/src/index.html"
+                    class="hover:text-neutral-300 hover:font-semibold header-font transition-all ">Home</a>
+                <a href="/src/pages/blogs.html"
+                    class="hover:text-neutral-300 hover:font-semibold header-font transition-all "> Blogs</a>
+                <a href="/src/pages/contact.html"
+                    class="hover:text-neutral-300 hover:font-semibold header-font transition-all "> Support</a>
+                <a href="/src/pages/about.html"
+                    class="hover:text-neutral-300 hover:font-semibold header-font transition-all "> About Us</a>
+                <a href="/src/pages/faq.html"
+                    class="hover:text-neutral-300 hover:font-semibold header-font transition-all "> FAQ</a>
+            </div>
+            <div class=" text-neutral-800 font-medium flex items-center ">
+                <a class="bg-white py-3 px-4 text-sm rounded-md shadow-lg hover:shadow-none font-normal transition-shadow body-font hidden lg:block"
+                    href="/src/pages/partner_reg_info.html">Become Partner Agency</a>
+
+                <button>
+                    <img src="assets/images/menu.svg" alt="menu" id="menu"
+                        class="color-primary w-8 h-8 m-3 md:hidden hover:opacity-80 inline-block cursor-pointer">
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section end   -->
+    <!-- Header starts -->
+    <header class="relative pt-16 md:pt-20 lg:mb-16 md:mb-14">
+        <div class="absolute w-full inset-0 -z-10 bg-gradient-to-b from-blue-600 to-black h-40 md:h-60">
+            <img src="../assets/images/contact.jpg" class="h-full w-full opacity-50 object-cover " alt="herobg">
+        </div>
+        <div
+            class="animate__animated animate__fadeInDown text-white flex flex-col text-center text-2xl md:text-4xl lg:text-5xl font-bold ">
+            Contact Support</div>
+    </header>
+    <!-- Header ends -->
+    
+    <!-- COntact info and Map start -->
+    <section class="text-gray-600 body-font relative mx-24 mt-24">
+        <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+            <div
+                class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0"
+                    marginwidth="0" scrolling="no"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63669.52819386711!2d9.242250505389302!3d4.1522901113459705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1061339035136365%3A0x225efcfd32aa93a9!2sMolyko%2C%20Buea!5e0!3m2!1sen!2sde!4v1707817012343!5m2!1sen!2sde"
+                    style="filter: contrast(1.2) opacity(0.5);"></iframe>
+                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                    <div class="lg:w-1/2 px-6">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                        <p class="mt-1">Dunamis Park, Qtr7 New Layout, Buea, Cameroon</p>
+                    </div>
+                    <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+                        <a class="secondary-color leading-relaxed">infome@bookin.com</a>
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+                        <p class="leading-relaxed">+237 675 652 089</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center lg:text-start mb-5 mx-3 lg:mx-0 mt-3">
+                    We are here for you 24/7
+                </h2>
+                <p class="leading-relaxed mb-5 text-gray-600">Our Support Tean is always READY to hear from you. You are
+                    very important to us. So, do not hesistate to contact us anytime and any day.
+                </p>
+                <div class="relative mb-4">
+                    <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-[#172bc7] focus:ring-2 focus:ring-[#172bc7] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-[#172bc7] focus:ring-2 focus:ring-[#172bc7] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                    <textarea id="message" name="message"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-[#172bc7] focus:ring-2 focus:ring-[#172bc7] h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+                <button
+                    class="text-white bg-[#172bc7] border-0 py-[0.8rem] px-6 shadow-md hover:shadow-none transition-shadow focus:outline-none hover:bg-[#172bc7] rounded-lg">Send Message</button>
+                <p class="text-xs text-gray-500 mt-3">The BookIn support team will get in touch with you shortly.Thanks for yout trust, we love you</p>
+            </div>
+        </div>
+    </section>
+    <!-- COntact info and Map ends -->
+    <!-- <Section -->
+        <!-- class="m-auto lg:gap-x-10 lg:mt-52 mb-10 lg:mb-24 lg:h-[25rem] w-10/12 items-center justify-center mt-10 flex flex-col lg:flex-row"> -->
+        <!-- <iframe class="animate__animated animate__fadeInLeft rounded-xl w-full lg:w-1/2 md:h-full h-40" -->
+            <!-- src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63669.52819386711!2d9.242250505389302!3d4.1522901113459705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1061339035136365%3A0x225efcfd32aa93a9!2sMolyko%2C%20Buea!5e0!3m2!1sen!2sde!4v1707817012343!5m2!1sen!2sde" -->
+            <!-- style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <!-- <div class="animate__animated animate__fadeInRight flex flex-col w-full lg:w-1/2 "> -->
+            <!-- <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center lg:text-start mb-5 mx-3 lg:mx-0 mt-3"> -->
+                <!-- We are here for you 24/7 -->
+            <!-- </h2> -->
+            <!-- <h3 class="text-md md:text-md body-font lg:text-lg font-normal mx-3 md:mx-0 text-center lg:text-start mb-2"> -->
+                <!-- Our Support Tean is always <strong>READY</strong> to hear from you. You are very important to us. So, do -->
+                <!-- not hesistate to contact us anytime and any day. -->
+            <!-- </h3> -->
+            <!-- <hr> -->
+            <!-- <hr> -->
+            <!-- <div class="w-full flex lg:gap-x-10 mt-5 m-auto"> -->
+                <!-- <div class="flex flex-col w-1/2"> -->
+                    <!-- <h2 class="md:text-lg lg:text-xl secondary-color font-semibold mb-2"> Headquarter -->
+                    <!-- </h2> -->
+                    <!-- <p class="me-3">Dunamis Park, Qtr7 New Layout, Buea, Cameroon </p> -->
+                <!-- </div> -->
+                <!-- <div class="flex flex-col w-1/2"> -->
+                    <!-- <h2 class="md:text-lg lg:text-xl secondary-color font-semibold"> Email & Phone -->
+                    <!-- </h2> -->
+                    <!-- <p class="me-3">+237 675 652 089 <br>infome@bookin.com</p> -->
+<!--  -->
+                <!-- </div> -->
+                <!-- <div class="flex flex-col space-y-2"> -->
+                <!-- <h2 class="md:text-lg lg:text-xl secondary-color font-semibold"> Socials -->
+                <!-- </h2> -->
+                <!-- <div class="flex items-start justify-start gap-x-2"> -->
+                <!-- <a href="https://www.facebook.com" target=”_blank” aria-label="Facebook"> <img -->
+                <!-- src="../assets/images/facebook.png" alt="facebook" class="w-6 hover:opacity-70"> </a> -->
+                <!-- <a href="https://www.whatsapp.com" target=”_blank” aria-label="WhatsApp"> <img -->
+                <!-- src="../assets/images/whatsapp.png" alt="WhatsApp" class="w-6 hover:opacity-70"> </a> -->
+                <!-- <a href="https://www.linkedin.com" target=”_blank” aria-label="WhatsApp"> <img -->
+                <!-- src="../assets/images/linkedin.png" alt="LinkedIn" class="w-6 hover:opacity-70"> </a> -->
+                <!-- <a href="https://www.twitter.com" target=”_blank” aria-label="Twitter"> <img -->
+                <!-- src="../assets/images/x.png" alt="Twitter" class="w-6 hover:opacity-70"> </a> -->
+                <!-- <a href="https://www.instagram.com" target=”_blank” aria-label="Instagram"> <img -->
+                <!-- src="../assets/images/insta.png" alt="Instagram" class="w-6 hover:opacity-70"> </a> -->
+                <!-- <a href="https://www.youtube.com" target=”_blank” aria-label="YouTube"> <img -->
+                <!-- src="../assets/images/youtube.png" alt="YouTube" class="w-6 hover:opacity-70"> </a> -->
+                <!-- </div> -->
+                <!--  -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </Section> -->
+
+    <!-- COntact info and Map End -->
+    <section
+        class="bg-gradient-to-r flex-col lg:flex-row from-[#ebedee] via-[#fdfbfb] -mb-10 to-[#cfd9df] py-9 lg:py-12 text-neutral-700 w-full m-auto flex justify-center items-center">
+        <!-- </h2> -->
+        <div class="text-start lg:w-3/5 lg:mr-10">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center lg:text-start mb-5 mx-3 md:mx-0">
+                Increase your Agency's Market Population</h2>
+
+            <h3
+                class="text-md md:text-md body-font  lg:text-xl font-normal mb-5 mx-3 md:mx-0 text-center lg:text-start">
+                Become partners with Africa's <strong>(#1)</strong> Bus Reservation brand and Increase your Agency's
+                Market Cap and Valuation.
+            </h3>
+        </div>
+        <a class="bg-[#172bc7] py-3 px-4 text-white lg:text-lg rounded-md shadow-md hover:shadow-none transition-shadow body-font "
+            href="/src/pages/about.html">Become a Partner Agency</a>
+    </section>
+    <!-- Footer Start -->
+    <footer>-
+        <div class=" bg-gradient-to-b from-[#ebedee] to-[#e2ebf0] text-neutral-800 px-8 -mb-10">
+            <div
+                class="justify-center m-auto flex lg:flex-row flex-col space-x-0 lg:space-x-16 space-y-10 w-full md:w-5/6">
+                <div class="flex flex-col space-y-2 mt-10">
+                    <a href="/src/index.html" aria-label="Go to homepage"> <img src="../assets/images/logo.png"
+                            alt="logo" class="w-20 md:w-28 hover:opacity-70 mb-2 transition-opacity"> </a>
+                    <h4 class="text-blue-800">Address</h4>
+                    <p class="me-3">Dunamis Park, Qtr7 Buea, CMR </p>
+                    <p class="me-3">+237 675 652 089</p>
+                    <p class="me-3">info@bookin.com</p>
+
+                    <div class="flex items-start justify-start gap-x-2">
+                        <a href="https://www.facebook.com" target=”_blank” aria-label="Facebook"> <img
+                                src="../assets/images/facebook.png" alt="facebook" class="w-6 hover:opacity-70"> </a>
+                        <a href="https://www.whatsapp.com" target=”_blank” aria-label="WhatsApp"> <img
+                                src="../assets/images/whatsapp.png" alt="WhatsApp" class="w-6 hover:opacity-70"> </a>
+                        <a href="https://www.linkedin.com" target=”_blank” aria-label="WhatsApp"> <img
+                                src="../assets/images/linkedin.png" alt="LinkedIn" class="w-6 hover:opacity-70"> </a>
+                        <a href="https://www.twitter.com" target=”_blank” aria-label="Twitter"> <img
+                                src="../assets/images/x.png" alt="Twitter" class="w-6 hover:opacity-70"> </a>
+                        <a href="https://www.instagram.com" target=”_blank” aria-label="Instagram"> <img
+                                src="../assets/images/insta.png" alt="Instagram" class="w-6 hover:opacity-70"> </a>
+                        <a href="https://www.youtube.com" target=”_blank” aria-label="YouTube"> <img
+                                src="../assets/images/youtube.png" alt="YouTube" class="w-6 hover:opacity-70"> </a>
+                    </div>
+
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <h4 class="text-blue-800 mb-3">Quick Links</h4>
+                    <a class=" hover:text-blue-700 transition-colors" href="pages/faq.html">FAQs</a>
+                    <a class=" hover:text-blue-700 transition-colors" href="pages/about.html">About
+                        Us</a>
+                    <a class=" hover:text-blue-700 transition-colors" href="pages/contact.html">Contact
+                        Support</a>
+                    <a class="b hover:text-blue-700 transition-colors" href="pages/terms.html">Terms &
+                        Condition</a>
+                    <a class=" hover:text-blue-700 transition-colors" href="pages/privacy.html">Privacy
+                        Policy</a>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <h4 class="text-blue-800 mb-3">Tips</h4>
+                    <a class=" hover:text-blue-700 transition-colors" href="pages/travel_tips.html">Travel
+                        Tips</a>
+                    <a class=" hover:text-blue-700 transition-colors" href="pages/booking_tips.html">Booking
+                        Tips</a>
+                    <a class=" hover:text-blue-700 transition-colors" href="">Blogs</a>
+                </div>
+                <div class="flex flex-col space-y-2 pr-3 ">
+                    <h4 class="text-blue-800 mb-3">Download</h4>
+                    <div
+                        class="items-start text-center lg:text-start text-neutral-700 flex flex-col lg:items-start justify-start">
+
+                        <h2 class="text-md lg:text-xl font-semibold">#1 App For Your Bus Booking </h2>
+                        <div class="lg:px-0 text-md md:text-md font-mono font-normal mb-5">
+                            Booking has never been easier
+                        </div>
+
+                        <div class=" flex flex-row gap-4  items-start">
+
+                            <a href="#"> <img src="../assets/images/dgoogle.png"
+                                    class="w-44 shadow-lg hover:shadow-none transition-shadow" alt="play store"></a>
+                            <a href="#"> <img src="../assets/images/dapple.png"
+                                    class="w-44 shadow-lg hover:shadow-none transition-shadow" alt="App store"></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-10 h-[0.1rem] bg-neutral-700 mb-10">
+            <div class="mb-3 text-start lg:text-center copyright pb-10 justify-center">
+                &copy; <a href=" #">bookin.com</a>, All Right Reserved. BookIn LLC
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>

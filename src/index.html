@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookIn</title>
+    <!-- <link rel="icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type="image/x-icon"> -->
+    <link rel="icon" href="assets/images/icon.ico" type="image/icon">
+    <link href="./output.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <a href="https://storyset.com/business">Business illustrations by Storyset</a> -->
+</head>
+
+<body class=" text-neutral-700 dark:text-neutral-200 body-font bg-gradient-to-r from-white to-[#fcfcfc]">
+    <!-- Navbar Section start -->
+    <nav class=" bg-[#172bc7] backdrop-blur-md sticky top-0 z-50 p-2 ">
+        <div class=" p-3 flex flex-wrap items-center w-11/12 justify-between m-auto">
+            <a href="/src/index.html" aria-label="Go to homepage"> <img src="assets/images/dlogo.png" alt="logo"
+                    class="w-24 md:w-28 hover:opacity-90 ml-5"> </a>
+
+            <div class="hidden lg:flex items-center  space-x-6 text-white font-medium">
+                <a href="#company"
+                    class="hover:text-neutral-300 hover:font-semibold header-font transition-all ">Company</a>
+                <a href="#whyus" class="hover:text-neutral-300 hover:font-semibold header-font transition-all "> Why
+                    us?</a>
+                <a href="#features"
+                    class="hover:text-neutral-300 hover:font-semibold header-font transition-all ">Features</a>
+                <a href="#howitworks" class="hover:text-neutral-300 hover:font-semibold header-font transition-all ">
+                    How to book</a>
+                <a href="#screenshots"
+                    class="hover:text-neutral-300 hover:font-semibold header-font transition-all ">Screenshots</a>
+                <div class="relative inline-block text-left">
+                    <div class="dropdown text-white hover:text-neutral-300 ">
+                        <button
+                            class="dropbtn hover:font-semibold inline-flex w-full justify-end gap-x-1.5 header-font transition-all"
+                            id="menu-button" aria-expanded="true" aria-haspopup="true">
+                            Pages
+                            <svg class="h-5 w-5 mr-16" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <div class="dropdown-content absolute right-0 z-10 w-56 rounded-md text-neutral-800 shadow-lg ring-opacity-5 focus:outline-none"
+                            role="none">
+                            <a href="/src/pages/blogs.html" class=" hover:block px-4" role="menuitem" tabindex="-1"
+                                id="menu-item-0">Blogs</a>
+                            <a href="/src/pages/faq.html" class="block px-4" role="menuitem" tabindex="-1"
+                                id="menu-item-1">FAQ</a>
+                            <a href="/src/pages/about.html" class=" block px-4" role="menuitem" tabindex="-1"
+                                id="menu-item-2">About Us</a>
+                            <a href="/src/pages/contact.html" class=" block px-4" role="menuitem" tabindex="-1"
+                                id="menu-item-3">Support</a>
+                            <a href="/src/pages/privacy.html" class="block px-4" role="menuitem" tabindex="-1"
+                                id="menu-item-3">Privacy Policy</a>
+                            <a href="/src/pages/terms.html" class=" block px-4" role="menuitem" tabindex="-1"
+                                id="menu-item-3">Terms and Condition</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" text-neutral-800 font-medium flex items-center ">
+                <a class="font-semibold bg-white py-3 px-4 text-sm rounded-md shadow-lg hover:shadow-none transition-shadow body-font hidden lg:block"
+                    href="/src/pages/partner_reg_info.html">Become Partner Agency</a>
+
+                <button>
+                    <img src="assets/images/menu.svg" alt="menu" id="menu"
+                        class="color-primary w-8 h-8 m-3 lg:hidden hover:opacity-80 inline-block cursor-pointer">
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section end   -->
+    <!-- Header Section start -->
+    <header class="bg-[#172bc7]  text-center md:text-start lg:h-full relative">
+
+        <img class="top-0 bottom-0 left-0 right-0 h-full mx-auto blur-sm w-full absolute object-cover opacity-20"
+            src="assets/images/herobg.jpeg" alt="herobg">
+        <div class="flex text-neutral-700 flex-col lg:flex-row items-center">
+            <div
+                class="lg:w-4/5 animate__animated animate__fadeInDown md:px-14 lg:pl-[6.5rem] flex flex-col items-center lg:items-start">
+                <!-- text-[#ff7701] -->
+                <h2
+                    class="text-2xl md:text-3xl text-white lg:text-4xl font-bold row-start-1 row-end-2 mb-5 mx-3 md:mx-0">
+                    All Available Trips in your Pockets</h2>
+                <h3
+                    class="text-md md:text-md body-font text-neutral-200 lg:text-xl font-normal row-start-1 row-end-2 mb-5 mx-3 md:mx-0 text-center lg:text-start">
+                    Africa's number one <strong>(#1)</strong> Bus Reservation App. Booking has never been this easier
+                </h3>
+                <div class=" flex mb-7 flex-row gap-4 mx-5 md:mx-0">
+
+                    <a href="#"> <img src="assets/images/google.png"
+                            class="w-44 md:w-48 shadow-lg hover:shadow-none transition-shadow" alt="play store"></a>
+                    <a href="#"> <img src="assets/images/apple.png"
+                            class="w-44  md:w-48 shadow-lg hover:shadow-none transition-shadow" alt="App store"></a>
+
+                </div>
+                <a class="animate__animated animate__fadeInLeft px-2 py-3 text-white md:px-6 lg:hidden rounded-md shadow-lg hover:shadow-none transition-shadow "
+                    href="/src/pages/partner_reg_info.html">Become
+                    Partner Agency</a>
+            </div>
+            <div class="hidden lg:block animate__animated animate__fadeInRight m-auto w-full object-cover">
+                <img class="pr-10 pb-6 pt-4 drop-shadow-2xl shadow-black" src="assets/images/headerimage.png"
+                    alt="herobg">
+            </div>
+        </div>
+        <!-- lg:px-40 -->
+    </header>
+    <!-- Header Section end -->
+    <main>
+        <!-- Our Partner Agencies-->
+        <section
+            class="bg-gradient-to-r from-[#ebedee] via-[#fdfbfb] to-[#cfd9df] py-9 lg:py-12 text-neutral-800 text-center w-full m-auto flex justify-center items-center">
+            <!-- </h2> -->
+            <div class="m-auto grayscale mt-4 flex flex-wrap items-center justify-center gap-x-16 gap-y-8 w-11/12">
+                <img class="w-24 opacity-60 hover:opacity-100 transition-opacity" src="assets/images/finex.jpg"
+                    alt="Finex">
+                <img class="w-24 opacity-60 hover:opacity-100 transition-opacity" src="assets/images/mondial.jpg"
+                    alt="mondial">
+                <img class="w-24 opacity-60 hover:opacity-100 transition-opacity" src="assets/images/mbs.png"
+                    alt="Musango">
+                <img class="w-24 opacity-60 hover:opacity-100 transition-opacity" src="assets/images/am.png"
+                    alt="Amour Mezam">
+                <img class="w-32 opacity-60 hover:opacity-100 transition-opacity" src="assets/images/pcompany.png"
+                    alt="pCompany">
+                <img class="w-32 opacity-60 hover:opacity-100 transition-opacity" src="assets/images/logo.png"
+                    alt="Logo">
+                <img class="w-24 opacity-60 hover:opacity-100 transition-opacity" src="assets/images/am.png" alt="AM">
+                <img class="w-32 opacity-60 hover:opacity-100 transition-opacity" src="assets/images/pcompany.png"
+                    alt="herobg">
+                <img class="w-32 opacity-60 hover:opacity-100 transition-opacity" src="assets/images/logo.png"
+                    alt="Logo">
+            </div>
+        </section>
+        <!-- Our Partner Agencies ends-->
+
+        <!-- About  BookIn starts -->
+        <!-- Vision and mission start -->
+        <section id="company" class="lg:mt-12 w-11/12 lg:w-full mx-0">
+            <h3 class="lg:text-xl font-semibold text-center text-[#c48207]">
+                ...About BookIn...
+            </h3>
+            <h2 class="mt-3 text-center text-3xl text-neutral-700 font-bold leading-[1.2] sm:text-4xl md:text-[40px]">
+                Our Mission and Vision
+            </h2>
+            <div class="m-auto flex flex-col pt-5 pb-8 lg:flex-row items-center w-4/5">
+                <div class="lg:w-2/5 flex m-auto items-center max-h-min">
+
+                    <img src="assets/images/values.png" class="h-full mt-5 w-full object-cover rounded-xl" alt="herobg">
+                </div>
+                <div
+                    class="mt-8 lg:mt-0 text-center lg:text-start h-full w-full lg:w-1/2 text-neutral-700 flex flex-col items-center lg:items-start justify-between">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold row-start-1 row-end-2 mb-3"> We Place All
+                        Available Trips in your Pockets
+                    </h2>
+                    <div class=" w-full lg:px-0 font-normal mb-5">
+                        <strong class="text-[#c48207]">Vision:</strong> To become Africa’s leading, most reliable
+                        and trusted travel brand (service provider), providing travelers with all available trips in
+                        their pockets from the comfort of their homes, and contributing to the development of interurban
+                        travel agencies through the provision of digital management solutions.
+                    </div>
+                    <div class=" w-full lg:px-0 font-normal row-start-1 row-end-2 mb-5">
+                        <strong class="text-[#c48207]">Mission:</strong> The Mission of BookIn is to create the best
+                        first-step-to-travel experience by placing
+                        all available trips in the hands of travelers, from the comfort of their homes
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Vision ans mission ends -->
+        <!-- Our values starts -->
+        <section class=" mb-20 w-11/12 lg:w-full mx-0">
+            <h2 class="mt-3 text-center text-3xl text-neutral-700 font-bold leading-[1.2] sm:text-4xl md:text-[40px]">
+                Our Values
+            </h2>
+            <div class="m-auto flex flex-col pb-8 pt-4 lg:flex-row items-center w-4/5">
+                <div
+                    class="mt-8 lg:mt-0 text-center lg:text-start h-full w-full lg:w-1/2 text-neutral-700 flex flex-col items-center lg:items-start justify-between">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold  mb-3"> We Place All
+                        Available Trips in your Pockets
+                    </h2>
+                    <div class=" w-full lg:px-0 font-normal mb-5">
+                        <strong class="text-[#c48207]">Vision:</strong> To become Africa’s leading, most reliable
+                        and trusted travel brand (service provider), providing travelers with all available trips in
+                        their pockets from the comfort of their homes, and contributing to the development of interurban
+                        travel agencies through the provision of digital management solutions.
+                    </div>
+                    <div class=" w-full lg:px-0 font-normal mb-5">
+                        <strong class="text-[#c48207]">Mission:</strong> The Mission of BookIn is to create the best
+                        first-step-to-travel experience by placing
+                        all available trips in the hands of travelers, from the comfort of their homes
+                    </div>
+
+                    <a class="bg-[#172bc7] py-3 px-4 text-white rounded-md shadow-md hover:shadow-none transition-shadow body-font "
+                        href="/src/pages/about.html">More about BookIn</a>
+                </div>
+                <div class="lg:w-2/5 flex m-auto ">
+                    <img src="assets/images/values.png" class="h-full mt-5 w-full object-cover rounded-xl" alt="herobg">
+                </div>
+            </div>
+        </section>
+        <!-- Our values end -->
+        <!-- About Bookin ends -->
+
+        <!-- Why Choose us starts -->
+        <section id="whyus" class="bg-[#292929] px-4 py-16 lg:px-28 lg:py-20 mt-20">
+            <div class="grid grid-cols-1 gap-4 gap-x-16 sm:grid-cols-2 md:grid-cols-3 lg:w-11/12 m-auto">
+                <div>
+                    <span class="text-base font-medium secondary-color">Why Choose us?</span>
+                    <p class="mt-3 text-3xl text-neutral-100 font-bold leading-[1.9] sm:text-4xl md:text-[40px]">
+                        Inter-urban Trips made EASY</p>
+                    <h1 class="font-regular text-md leading-tight text-white lg:text-xl">With BookIn, we make trip management easy for our partners and Booking easy for our passengers</h1>
+                </div>
+                <div class="flex flex-col flex-wrap space-y-4 lg:mt-0">
+                    <div class="flex items-center justify-center space-y-4">
+                        <div class="flex w-full items-start gap-2">
+                            <div>
+                                <p class="mb-2 text-xl font-semibold text-accent-green secondary-color">For Finance Managers</p>
+                                <p class="text-base text-white">Track costs with precision for financial control.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center space-y-4">
+                        <div class="flex w-full items-start gap-2">
+                          
+                            <div>
+                                <p class="mb-2 text-xl font-semibold text-accent-green secondary-color">For Accountants</p>
+                                <p class="text-base text-white">Make tasks easier and reports clearer with our expense
+                                    management software.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-wrap space-y-4">
+                    <div class="flex items-center justify-center space-y-4">
+                        <div class="flex w-full items-start gap-2">
+                           
+                            <div>
+                                <p class="mb-2 text-xl font-semibold text-accent-green secondary-color">For CEOs</p>
+                                <p class="text-base text-white">Drive growth, increase profitability, and improve the
+                                    bottom-line.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center space-y-4">
+                        <div class="flex w-full items-start gap-2">
+                          
+                            <div>
+                                <p class="mb-2 text-xl font-semibold text-accent-green secondary-color">For CFOs</p>
+                                <p class="text-base text-white">Master finances, stay up-to-date with the latest
+                                    regulations and ensure compliance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose us ends -->
+
+        <!-- App Features starts -->
+        <section id="features"
+            class=" container mx-auto flex flex-col items-center justify-center w-full lg:py-24 xl:w-3/4">
+
+            <h3 class="lg:text-xl font-medium text-center mb-3 text-[#c48207]">
+                ...App Features...
+            </h3>
+            <h2 class="mt-3 text-center text-3xl text-neutral-700 font-bold leading-[1.2] sm:text-4xl md:text-[40px]">
+                Explore Amazing App Features
+            </h2>
+            <div class="flex w-full h-1/2 gap-x-3 mt-10 items-center flex-col lg:flex-row">
+                <div class="flex w-full lg:w-1/3 flex-col text-neutral-700 gap-y-5 text-center lg:text-end">
+                    <div class="flex flex-col">
+                        <Strong class="text-xl">Quick Search...</Strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe id similique molestiae
+                        </p>
+                    </div>
+                    <div class="flex flex-col">
+                        <Strong class="text-xl">Easy Mobile Money Payment...</Strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe id similique molestiae </p>
+                    </div>
+                    <div class="flex flex-col">
+                        <Strong class="text-xl">Awesome User Xperience...</Strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe id similique molestiae </p>
+                    </div>
+                </div>
+                <div class="relative mt-10 h-full lg:mx-20 hidden lg:block object-cover"><img
+                        src="assets/images/features.png" alt="herobg"></div>
+                <div
+                    class="flex w-full lg:w-1/3 flex-col text-neutral-700 gap-y-5 mt-3 lg:mt-0 text-center lg:text-start">
+                    <div class="flex flex-col">
+                        <Strong class="text-xl">...24/7 Support System</Strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe id similique molestiae sit
+                            nesciunt unde consequuntur itaque </p>
+                    </div>
+                    <div class="flex flex-col">
+                        <Strong class="text-xl">...Quick Search</Strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe id similique molestiae sit
+                            nesciunt unde consequuntur itaque </p>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </section>
+        <!-- App Features ends -->
+
+        <!-- screenshots starts -->
+        <section id="screenshots" class="bg-gradient-to-r from-[#e0dcc7] to-[#f8e1ae] px-4 py-16 lg:px-28 lg:py-10">
+            <h3 class="lg:text-xl font-semibold text-center text-[#172bc7]">
+                ...App Screenshots...
+            </h3>
+            <h2 class="my-3 text-center text-3xl text-neutral-700 font-bold leading-[1.2] sm:text-4xl md:text-[40px]">
+                Some App Screenshots
+            </h2>
+            <div class="flex flex-wrap items-center justify-center gap-y-5 lg:gap-y-0 -space-x-16 mt-6 m-auto ">
+                <img class="w-[37rem]" src="assets/images/screen1.png" alt="">
+                <img class="w-[37rem]" src="assets/images/screen2.png" alt="">
+            </div>
+        </section>
+        <!-- screenshots ends -->
+
+        <!-- Download app starts -->
+        <section
+            class=" relative m-auto flex flex-col lg:mt-40 my-16 lg:my-20 bg-gradient-to-r from-[#ebedee] via-[#fdfbfb] to-[#cfd9df] h-[26rem] lg:w-3/4 lg:rounded-3xl lg:flex-row md:space-y-0 space-y-5">
+
+            <img class="top-0 bottom-0 left-0 right-0 h-full mx-auto  w-full absolute object-cover opacity-5 blur-sm"
+                src="assets/images/herobg.jpeg" alt="herobg">
+            <div
+                class="absolute lg:pl-20 text-center lg:text-start h-full w-full lg:w-1/2 text-neutral-700 flex flex-col items-center lg:items-start justify-center">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center lg:text-start mb-5 mx-3 md:mx-0">
+                    #1 App For Your Bus Booking</h2>
+                <div class=" w-full lg:px-0 text-lg font-mono md:text-xl lg:text-2xl font-normal mb-5">
+                    Booking has never been easier.
+                </div>
+                <div class=" flex mb-7 flex-col gap-4 lg:flex-row items-start">
+
+                    <a href="#"> <img src="assets/images/dgoogle.png"
+                            class="w-44 shadow-lg hover:shadow-none transition-shadow" alt="play store"></a>
+                    <a href="#"> <img src="assets/images/dapple.png"
+                            class="w-44 shadow-lg hover:shadow-none transition-shadow" alt="App store"></a>
+
+                </div>
+            </div>
+            <img class=" bottom-0 right-16 object-cover absolute hidden lg:block h-[32rem]"
+                src="assets/images/download.png" alt="herobg">
+        </section>
+        <!-- Download app ends -->
+
+        <!-- Become a Partner  starts -->
+        <section
+            class="bg-gradient-to-r flex-col lg:flex-row from-[#ebedee] via-[#fdfbfb] -mb-10 to-[#cfd9df] py-9 lg:py-12 text-neutral-700 w-full m-auto flex justify-center items-center">
+            <!-- </h2> -->
+            <div class="text-start w-5/6 lg:w-2/4 lg:mr-10">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center lg:text-start mb-5 mx-3 md:mx-0">
+                    Increase your Agency's Market Population</h2>
+                <h3
+                    class="text-md md:text-md body-font  lg:text-xl font-normal mb-5 mx-3 md:mx-0 text-center lg:text-start">
+                    Become partners with Africa's <strong>(#1)</strong> Bus Reservation brand and Increase your Agency's
+                    Market Cap and Valuation.
+                </h3>
+            </div>
+            <a class="bg-[#172bc7] py-3 px-4 text-white lg:text-lg rounded-md shadow-md hover:shadow-none transition-shadow body-font "
+                href="/src/pages/about.html">Become a Partner Agency</a>
+        </section>
+        <!-- Become a Partner ends-->
+        
+        <!-- How to Book start -->
+        <section class="px-0 bg-[#172bc7] text-neutral-300 transition-transform">
+            <div class="grid w-full grid-cols-1 overflow-hidden md:h-[28rem] md:grid-cols-2">
+                <div class="flex flex-wrap content-start sm:pr-10">
+                    <div class="mb-6 w-full px-4 pt-16 sm:pl-28 sm:pr-20 xl:pt-20">
+                        <h1
+                            class="my-4 text-center text-2xl font-normal leading-tight text-accent-gray md:text-left md:text-3xl lg:text-left xl:text-5xl">
+                            The financial management solution <br> <span class="font-semibold">for every industry</span>
+                        </h1>
+                        <div class="mt-4">
+                            <div>
+                                <div class="space-y-2 ">
+                                    <div class="flex">
+                                        <h1
+                                            class="my-2.5 flex cursor-pointer items-center gap-2  mb-0 text-3xl font-semibold text-accent-brown xl:text-5xl">
+                                            Agriculture
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="flex h-full w-full md:overflow-hidden lg:overflow-hidden">
+                    <div
+                        class="relative flex aspect-square h-full w-full shrink-0 md:overflow-hidden lg:overflow-hidden">
+                        <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                alt="h" src="assets/images/values.png" decoding="async" data-nimg="fill"
+                                class="ml-auto max-w-full"
+                                style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                                sizes="100vw"><noscript></noscript></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How to Book ends -->
+    </main>
+    <!-- Footer Start -->
+    <footer>
+        <div class=" bg-gradient-to-b from-[#ebedee] to-[#e2ebf0] text-neutral-800 px-8 -mb-10">
+            <div
+                class="justify-center m-auto flex lg:flex-row flex-col space-x-0 lg:space-x-16 space-y-10 w-full md:w-5/6">
+                <div class="flex flex-col space-y-2 mt-10">
+                    <a href="/src/index.html" aria-label="Go to homepage"> <img src="assets/images/logo.png" alt="logo"
+                            class="w-20 md:w-28 hover:opacity-70 mb-2 transition-opacity"> </a>
+                    <h4 class="text-blue-800">Address</h4>
+                    <p class="me-3">Dunamis Park, Qtr7 Buea, CMR</p>
+                    <p class="me-3">+237 675 652 089</p>
+                    <p class="me-3">info@bookin.com</p>
+                    <div class="flex items-start justify-start gap-x-2">
+                        <a href="https://www.facebook.com" target=”_blank” aria-label="Facebook"> <img
+                                src="assets/images/facebook.png" alt="facebook" class="w-6 hover:opacity-70"> </a>
+                        <a href="https://www.whatsapp.com" target=”_blank” aria-label="WhatsApp"> <img
+                                src="assets/images/whatsapp.png" alt="WhatsApp" class="w-6 hover:opacity-70"> </a>
+                        <a href="https://www.linkedin.com" target=”_blank” aria-label="WhatsApp"> <img
+                                src="assets/images/linkedin.png" alt="LinkedIn" class="w-6 hover:opacity-70"> </a>
+                        <a href="https://www.twitter.com" target=”_blank” aria-label="Twitter"> <img
+                                src="assets/images/x.png" alt="Twitter" class="w-6 hover:opacity-70"> </a>
+                        <a href="https://www.instagram.com" target=”_blank” aria-label="Instagram"> <img
+                                src="assets/images/insta.png" alt="Instagram" class="w-6 hover:opacity-70"> </a>
+                        <a href="https://www.youtube.com" target=”_blank” aria-label="YouTube"> <img
+                                src="assets/images/youtube.png" alt="YouTube" class="w-6 hover:opacity-70"> </a>
+                    </div>
+
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <h4 class="text-blue-800 mb-3">Quick Links</h4>
+                    <a class=" hover:text-blue-700 transition-colors" href="pages/faq.html">FAQs</a>
+                    <a class=" hover:text-blue-700 transition-colors" href="pages/about.html">About
+                        Us</a>
+                    <a class=" hover:text-blue-700 transition-colors" href="pages/contact.html">Contact
+                        Support</a>
+                    <a class="b hover:text-blue-700 transition-colors" href="pages/terms.html">Terms &
+                        Condition</a>
+                    <a class=" hover:text-blue-700 transition-colors" href="pages/privacy.html">Privacy
+                        Policy</a>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <h4 class="text-blue-800 mb-3">Tips</h4>
+                    <a class=" hover:text-blue-700 transition-colors" href="pages/travel_tips.html">Travel
+                        Tips</a>
+                    <a class=" hover:text-blue-700 transition-colors" href="pages/booking_tips.html">Booking
+                        Tips</a>
+                    <a class=" hover:text-blue-700 transition-colors" href="">Blogs</a>
+                </div>
+                <div class="flex flex-col space-y-2 pr-3 ">
+                    <h4 class="text-blue-800 mb-3">Download</h4>
+                    <div
+                        class="items-start text-center lg:text-start text-neutral-700 flex flex-col lg:items-start justify-start">
+
+                        <h2 class="text-md lg:text-xl font-semibold">#1 App For Your Bus Booking </h2>
+                        <div class="lg:px-0 text-md md:text-md font-mono font-normal mb-5">
+                            Booking has never been easier
+                        </div>
+
+                        <div class=" flex flex-row gap-4  items-start">
+
+                            <a href="#"> <img src="assets/images/dgoogle.png"
+                                    class="w-44 shadow-lg hover:shadow-none transition-shadow" alt="play store"></a>
+                            <a href="#"> <img src="assets/images/dapple.png"
+                                    class="w-44 shadow-lg hover:shadow-none transition-shadow" alt="App store"></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-10 h-[0.1rem] bg-neutral-700 mb-10">
+            <div class="mb-3 text-start lg:text-center copyright pb-10 justify-center">
+                &copy; <a class=" href=" #">Your Site Name</a>, All Right Reserved. BookIn LLC
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+</html>
